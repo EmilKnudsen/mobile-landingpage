@@ -1,0 +1,38 @@
+@media screen and (max-width: 376px)  {
+  .mainButton  {
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 144px;
+    margin: 0 14px;
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &__logo {
+      height: 28px;
+      width: auto;
+    }
+    &__content {
+      margin: 0 1em;
+      line-height: 1em;
+      text-align: left;
+    }
+    &__contentDw {
+      padding: 0px;
+      margin: 0px;
+      font-size: 9px;
+    }
+    &__contentName {
+      padding: 0px;
+      margin: 0px;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@media screen and (max-width: 376px) {
+  .features {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FAFAFA;
+    padding: 20px 10px;
+    &__images {
+      margin: 5px 0;
+    }
+    &__copy {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #4F4F4F;
+    }
+  }
+}
