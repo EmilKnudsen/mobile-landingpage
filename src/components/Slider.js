@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import Carousel from 'react-grid-carousel'
+import Carousel from 'react-grid-carousel';
 import Users from './Users';
 
 function Slider () {
@@ -29,6 +29,6 @@ function Slider () {
     </div>
   )
   
-}
+};
 
 export default Slider;
