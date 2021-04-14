@@ -20,6 +20,7 @@
     .features {
       background-color: #00ADEE;
       text-align: left;
+      margin: 0;
       &__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
