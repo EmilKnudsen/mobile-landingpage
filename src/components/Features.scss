@@ -1,16 +1,40 @@
-@media screen and (max-width: 376px) {
   .features {
     margin: 0 auto;
     text-align: center;
     background-color: #FAFAFA;
     padding: 20px 10px;
-    &__images {
-      margin: 5px 0;
-    }
     &__copy {
       margin: 5px 0;
       font-size: 16px;
       color: #4F4F4F;
+      width: 100%;
+    }
+    &__link {
+      color: #00ADEE;
+      margin: 5px 0;
+      font-size: 26px;
     }
   }
-}
+
+  @media screen and (min-width: 1000px)  {
+    .features {
+      background-color: #00ADEE;
+      text-align: left;
+      &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0 5em;
+        grid-gap: 1rem;
+        background-color: #00ADEE;
+      }
+      &__copy {
+        color: white;
+      }
+      &__link {
+        color: white;
+        margin: 5px 0;
+        font-size: 26px;
+      }
+    }
+  }

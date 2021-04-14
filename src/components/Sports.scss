@@ -1,0 +1,53 @@
+.sports {
+  padding: 2em 1em;
+  text-align: center;
+  background-color: #FAFAFA;
+  &__header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 2em;
+  }
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "sport . sport1" 
+                "sport2 sport3 sport4" 
+                "sport5 sport5 sport5";
+  }
+  &__image{
+    max-width: 100%;
+    place-self: center;
+    &:nth-child(1) {
+      grid-area: sport;
+    }
+    &:nth-child(2) {
+      grid-area: sport1;
+    }
+    &:nth-child(3) {
+      grid-area: sport2;
+    }
+    &:nth-child(4) {
+      grid-area: sport3;
+    }
+    &:nth-child(5) {
+      grid-area: sport4;
+    }
+    &:nth-child(6) {
+      grid-area: sport5;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+  .sports {
+    &__images {
+      display: flex;
+      justify-content: center;
+    } 
+    &__image {
+      margin: 0 2em;
+    } 
+  }
+}

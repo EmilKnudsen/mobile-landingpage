@@ -1,23 +1,12 @@
-@media screen and (max-width: 376px) {
   .main{
-    background-color: #F4F6F9;
-    padding-bottom: 50px;
     margin-bottom: 50px;
     &__header{
-      display: flex;
+      margin: 0 auto;
+      text-align: center;
       justify-content: center;
-      align-items: center;
       padding: 20px;
       margin-bottom: 5em;
-    }
-    &__headerImg {
-      height: 25px;
-      width: auto;
-    }
-    &__headerText {
-      color: #5282F0;
-      font-size: 24px;
-      margin: 5px;
+      display: block;
     }
     &__head {
       font-size: 30px;
@@ -41,4 +30,50 @@
       justify-content: center;
     }
   }
+
+@media screen and (max-width: 1000px)  {
+  .main__image {
+    display: none;
   }
+}
+
+@media screen and (min-width: 1000px)  {
+  .main{
+    text-align: left;
+    margin-left: 5em;
+    grid-area: left;
+    &__head{
+      text-align: left;
+      margin: 1em 0px;
+      width: 100%;
+    }
+    &__copy {
+      text-align: left;
+      margin: 0px;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: start;
+    }
+    &__header {
+      text-align: left;
+      margin-left: 5em;
+      padding: 20px 0px;
+      grid-area: sport;
+    }
+    &__image{
+      height: 560px;
+      z-index: -1;
+      grid-area: picture;
+    }
+    &__heading {
+      display: grid;  
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "sport picture"
+                  "left picture"
+                  "left picture";
+      width: 100%;
+    }
+  }
+}

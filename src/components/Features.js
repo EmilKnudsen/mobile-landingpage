@@ -1,9 +1,9 @@
 import "./Features.scss";
 
-function Features ({image, copy}) {
+function Features ({link, copy}) {
   return (
     <div className="features">
-      <img className="features__images" src={image} alt="Icon"/>
+      <a className="features__link" href="/">{link}</a>
       <p className="features__copy">{copy}</p>
     </div>
   )
