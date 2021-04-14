@@ -5,7 +5,6 @@ import InfoCard from './components/InfoCard';
 import Main from './components/Main';
 import Slider from './components/Slider';
 import Sports from './components/Sports';
-import Users from './components/Users';
 import VideoCard from './components/VideoCard';
 import { FaYoutube, FaBell, FaPlusSquare, FaFontAwesomeFlag, FaPhoneSquareAlt, FaCheckSquare, FaRssSquare, FaShareAltSquare, FaPenSquare} from 'react-icons/fa';
 
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="main__heading">
-      <img className="main__header" src="./images/sportHead.png" alt=""/>
+      <img className="main__header" src="./images/sportHead.png" alt="Head Image"/>
       <Main head="Get a personalized football experience tailored just for you" copy="Achieve super-fan status by getting tailored updates and up-to-the-minute information on your team."/>
       <img className="main__image" src="./images/phones.png" alt="Phones"/>
       </div>
@@ -23,7 +22,7 @@ function App() {
       </div>
       <div className="infoImg">
       <InfoCard category="GET STARTED" header="User-friendly Interface" copy="The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian subscription. So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for you, you can still watch loads of firecracker Premier League action as long as you sign in with a free Guardian iD." link="Learn more"/>
-      <img className="phoneImage" src="/phone.svg" alt="test"/>
+      <img className="phoneImage" src="/phone.svg" alt="Phones"/>
       </div>
       <div className="features__container">
       <Features link={<FaYoutube/>} copy="Video highlights for every Premier League and English Football League game" />
@@ -40,7 +39,7 @@ function App() {
       <Sports />
       <div className="footerImg">
       <Main head="Get Up Close With Your Team" copy="If you’re interested in the scores of more than one team (it’s OK, we won’t tell your mates you support two clubs!), you can choose the scores and competitions that matter to you using the ‘My Scores’ section. So, make sure you’re a top-flight football fan by downloading the Football Score Centre now. It’s got all this:"/>
-      <img className="footerImage" src="./images/footer.png" alt="image"/>
+      <img className="footerImage" src="./images/footer.png" alt="Footer"/>
       </div>
       <Footer />
     </div>
