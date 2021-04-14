@@ -41,6 +41,6 @@ describe("Slider", function() {
 
     await act( async() =>render(<Slider />)) 
 
-      expect(screen.queryByRole(<img/>)&& screen.getByRole(src).toBe("./images/user1.png"))
+    expect(screen.queryByRole(<img/>)&& screen.getByRole(src).toBe("./images/user1.png"))
   });
 });

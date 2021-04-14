@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="main__heading">
-      <img className="main__header" src="./images/sportHead.png" alt="Head Image"/>
+      <img className="main__header" src="./images/sportHead.png" alt="Sport icon"/>
       <Main head="Get a personalized football experience tailored just for you" copy="Achieve super-fan status by getting tailored updates and up-to-the-minute information on your team."/>
       <img className="main__image" src="./images/phones.png" alt="Phones"/>
       </div>
